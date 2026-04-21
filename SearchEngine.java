@@ -38,7 +38,7 @@ public class SearchEngine {
         JButton searchBtn = new JButton("Поиск");
         styleButton(searchBtn);
 
-        JButton themeBtn = new JButton("🌙 Тёмная тема");
+        JButton themeBtn = new JButton("Тёмная тема");
         styleButton(themeBtn);
 
         JTextArea result = new JTextArea();
@@ -59,7 +59,7 @@ public class SearchEngine {
             dark = !dark;
             applyTheme(panel, logo, searchField, result);
 
-            themeBtn.setText(dark ? "☀ Светлая тема" : "🌙 Тёмная тема");
+            themeBtn.setText(dark ? "Светлая тема" : "Тёмная тема");
         });
 
         panel.add(Box.createVerticalStrut(40));
